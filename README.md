@@ -9,7 +9,7 @@ The simplest way to implement this package is to have a cron file in the local p
 
 example/test.go
 ---------------
-{
+`
 package main
 
 import (
@@ -43,4 +43,4 @@ func main() {
 
 	fmt.Println("Bye")
 }
-}
+`
