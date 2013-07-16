@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"crontab"
+	"github.com/knickers/crontab"
 )
 
 func main() {
