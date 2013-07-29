@@ -26,13 +26,14 @@ example/test.go
 			fmt.Println("Cron.Load", err.Error())
 		}
 	
-		err = cron.AddString("* * * * * ls -al ~/")
+		err = cron.AddString("* * * * * ls -al ~/", "{name:John,age:27}")
 		if err != nil {
 			fmt.Println("Cron.AddString", err.Error())
 		}
 	
 		for i, e := range cron.Jobs {
 			fmt.Printf("%d) %s\n", i, e)
+			fmt.Println("    " + e.Comment)
 		}
 	
 		err = cron.Save("test.cron")

@@ -4,7 +4,7 @@
 # For more information visit http://www.github.com/knickers/crontab
 # Also see the Linux manual pages of crontab(5) and cron(8)
 
-*/2 3 4,7 12 * mplayer ~/music/Recorded/jeans-made-out-of-sweat-pants.mp3
+*/2 3 4,7 12 * mplayer ~/music/song.mp3
 #This is a comment
 * 3 4 12 * echo hello world
 #echo comment

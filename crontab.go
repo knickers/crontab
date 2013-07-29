@@ -123,7 +123,6 @@ func (c *Cron) Load(file string) error {
 // Write out the cron jobs to file. Each cron job will be on it's own line, the
 // optional comment will directly follow the cron job also on it's own line.
 func (c *Cron) Save(file string) error {
-	fmt.Println("Saving to", file)
 	read, err := os.Open(file)
 	if err != nil {
 		return err
