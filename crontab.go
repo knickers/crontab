@@ -1,11 +1,10 @@
+// Package crontab manages a custom crontab file to give access to the Linux Cron Daemon.
 package crontab
 
 import (
 	"bufio"
 	"errors"
 	"fmt"
-	//"io"
-	//"log"
 	"os"
 	"strings"
 )

@@ -1,3 +1,4 @@
+// A simple example crontab implementation
 package main
 
 import (
