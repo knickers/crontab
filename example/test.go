@@ -16,7 +16,7 @@ func main() {
 		fmt.Println("Cron.Load", err.Error())
 	}
 
-	err = cron.AddString("* * * * * ls -al ~/", "{name:John,age:27}")
+	err = cron.AddString("* * * * * ls -al ~/", `{"name":"John","age":"27"}`)
 	if err != nil {
 		fmt.Println("Cron.AddString", err.Error())
 	}
