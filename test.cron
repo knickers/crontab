@@ -3,6 +3,9 @@
 #
 # For more information visit http://www.github.com/knickers/crontab
 # Also see the Linux manual pages of crontab(5) and cron(8)
+#
+# minute  hour  day-of-month month  day-of-week command
+# (0-59) (0-23)    (0-31)    (0-12)    (0-7)    Script to run
 
 */2 3 4,7 12 * mplayer ~/music/song.mp3
 #This is a comment

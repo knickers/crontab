@@ -26,6 +26,14 @@ func main() {
 		fmt.Println("    " + e.Comment)
 	}
 
+	fmt.Println()
+	cron.RemoveJob(cron.Jobs[len(cron.Jobs)-1])
+
+	for i, e := range cron.Jobs {
+		fmt.Printf("%d) %s\n", i, e)
+		fmt.Println("    " + e.Comment)
+	}
+
 	err = cron.Save("test.cron")
 	if err != nil {
 		fmt.Println("Cron.Save", err.Error())
